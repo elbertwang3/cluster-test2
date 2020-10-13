@@ -43,11 +43,11 @@ figure.append('img').attr('class', 'step-12').attr('opacity', 0).attr("src", "im
 
 figure.append('img').attr('class', 'step-13').attr('opacity', 0).attr("src", "img/" + "step-13" + ".png")
 
-figure.append('img').attr('class', 'step-14').attr('opacity', 0).attr("src", "img/" + "step-11" + ".gif")
+figure.append('img').attr('class', 'step-14').attr('opacity', 0).attr("src", "img/" + "step-14" + ".gif")
 
-figure.append('img').attr('class', 'step-15').attr('opacity', 0).attr("src", "img/" + "step-12" + ".gif")
+figure.append('img').attr('class', 'step-15').attr('opacity', 0).attr("src", "img/" + "step-15" + ".gif")
 
-figure.append('img').attr('class', 'step-16').attr('opacity', 0).attr("src", "img/" + "step-13" + ".gif")
+figure.append('img').attr('class', 'step-16').attr('opacity', 0).attr("src", "img/" + "step-16" + ".gif")
 
 
 // generic window resize listener event
