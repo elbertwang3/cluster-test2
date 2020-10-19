@@ -19,7 +19,7 @@ figure.append('img').attr('class', 'step-2').attr('opacity', 0)
 
 
 figure.append('img').attr('class', 'step-3').attr('opacity', 0)
-  .attr("src", "img/" + "step-3" + ".jpg")
+  .attr("src", "img/" + "step-3" + ".png")
 
 
 figure.append('img').attr('class', 'step-4').attr('opacity', 0)
