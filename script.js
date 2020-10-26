@@ -19,14 +19,14 @@ figure.append('img').attr('class', 'step-2').attr('opacity', 0)
 
 
 figure.append('img').attr('class', 'step-3').attr('opacity', 0)
-  .attr("src", "img/" + "step-3" + ".png")
+  .attr("src", "img/" + "step-3" + ".gif")
 
 
 figure.append('img').attr('class', 'step-4').attr('opacity', 0)
-  .attr("src", "img/" + "step-4" + ".gif")
+  .attr("src", "img/" + "step-4" + ".png")
 
 figure.append('img').attr('class', 'step-5').attr('opacity', 0)
-  .attr("src", "img/" + "step-5" + ".jpg")
+  .attr("src", "img/" + "step-5" + ".png")
 
 figure.append('img').attr('class', 'step-6').attr('opacity', 0)
   .attr("src", "img/" + "step-6" + ".gif")
