@@ -3573,7 +3573,7 @@ article {
   margin: 0 auto;
 }
 .scroll-text{
-  font-size: 14px !important;
+  font-size: 16px !important;
 
 }
 
@@ -3607,9 +3607,9 @@ figure p {
   margin: 0 auto 2rem auto;
   /* background-color: #3b3b3b; */
   /* color: #fff; */
-  opacity: 0;
-animation: fadeOut ease 1s;
--webkit-animation: fadeOut ease 1s;
+  opacity: 1;
+/*animation: fadeOut ease 1s;
+-webkit-animation: fadeOut ease 1s; */
 }
 
 .step:first-child {
@@ -3622,8 +3622,8 @@ animation: fadeOut ease 1s;
 
 .step.is-active {
   opacity: 1;
-   animation: fadeIn ease 1s;
-   -webkit-animation: fadeIn ease 1s;
+  /* animation: fadeIn ease 1s;
+   -webkit-animation: fadeIn ease 1s; */
 }
 
 .step p {
