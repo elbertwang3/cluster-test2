@@ -3477,14 +3477,41 @@ hr {
 
 .cover_video{
   object-fit: cover;
-width: 100vw;
-height: 100vh;
+width: 100%;
+margin-top: 4vh;
 /* position: fixed; */
 position: absolute;
 top: 0;
 left: 0;
   z-index: -100;
 }
+
+.closing_content {
+  position: relative;
+  width: 100%; !important;
+  margin-top: 0;
+  top:0%;
+  padding-left: 0%;
+  padding-right: 0%;
+  text-align: center;
+  color: black;
+  margin-bottom: 0em;
+  padding-bottom:0%; 
+}
+
+
+.closing_video{
+  display: inline-block;
+object-fit: cover; 
+width: 100%;
+
+ position: fixed; 
+position: absolute;
+top: 0;
+left: 0;
+  z-index: -100;
+}
+
 
 
 .s1{
