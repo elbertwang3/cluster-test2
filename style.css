@@ -1274,8 +1274,8 @@ html {
 .cover_content {
   position: absolute;
   width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 52.5%;
+  transform: translateY(-47.5%);
   padding-left: 3%;
   padding-right: 3%;
   text-align: center;
