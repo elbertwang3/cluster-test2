@@ -1218,17 +1218,6 @@ html {
     font-size: 12px;
     text-align: center;
   }
-  .cover_content {
-    position: relative;
-    width: 100%;
-    margin-top: 0;
-    top: 60%;
-    padding-left: 3%;
-    padding-right: 3%;
-    text-align: center;
-    color: white;
-    margin-bottom: 1em;
-  }
 
   section p {
     font-size: 14px;
@@ -1513,16 +1502,6 @@ figure p {
   display: inline-block;
 }
 
-.article {
-  margin-top: 25vh;
-}
-
-@media only screen and (max-width: 768px) {
-  .article {
-    margin-top: 0;
-  }
-}
-
 .cover {
   position: relative;
   background-size: cover;
@@ -1578,4 +1557,32 @@ figure p {
   display: block;
   background-color: #860101;
   z-index: 100;
+}
+
+.scroll-prompt {
+  width: 30px;
+  margin: 25px auto;
+}
+
+.float {
+  -webkit-animation-name: Floating;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+@keyframes Floating {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  65% {
+    -webkit-transform: translate(0, 15px);
+    transform: translate(0, 15px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
 }

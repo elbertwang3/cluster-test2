@@ -3,18 +3,13 @@ const progress = document.getElementsByClassName("progress-bar")[0];
 const scrolly = document.getElementById("scrolly");
 let scrollyHeight = scrolly.clientHeight;
 let scrollyOffset = scrolly.getBoundingClientRect().top;
-console.log(scrollyHeight);
-console.log(scrollyOffset);
 
 // generic window resize listener event
 function handleResize() {
-  console.log("resizing");
   // 3. tell scrollama to update new element dimensions
   scroller.resize();
   scrollyHeight = scrolly.clientHeight;
   scrollyOffset = scrolly.getBoundingClientRect().top;
-  console.log(scrollyHeight);
-  console.log(scrollyOffset);
 }
 
 // scrollama event handlers
