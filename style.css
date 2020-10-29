@@ -1535,6 +1535,9 @@ figure p {
 }
 
 @media only screen and (max-width: 640px) {
+  .progress-bar {
+    top: 40px !important;
+  }
   .cover {
     margin-top: 40px;
     background-image: url("video/Splash-screen_mobile.gif");
@@ -1562,4 +1565,17 @@ figure p {
 .time {
   font-style: italic;
   font-size: 16px;
+}
+
+.closing_video {
+  margin-bottom: -5px;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 50px;
+  height: 2px;
+  display: block;
+  background-color: #860101;
+  z-index: 100;
 }
