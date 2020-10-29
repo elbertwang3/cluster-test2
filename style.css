@@ -1421,7 +1421,7 @@ figure p {
 }
 
 .step {
-  margin: 0 auto 2rem auto;
+  margin: 0 auto;
   opacity: 1;
   /* height: 75vh; */
   padding-bottom: 75vh;
@@ -1440,7 +1440,7 @@ figure p {
 }
 
 .scroll-text p {
-  text-align: left;
+  text-align: center;
   margin-bottom: 1rem;
 }
 
