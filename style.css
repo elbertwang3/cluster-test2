@@ -1327,20 +1327,20 @@ html {
 .cover_content {
   position: absolute;
   width: 100%;
-  top: 52.5%;
-  transform: translateY(-47.5%);
+  top: 50%;
+  transform: translateY(-50%);
   padding-left: 3%;
   padding-right: 3%;
   text-align: center;
   color: black;
 }
 
-/* @media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   .cover_content {
-    top: 60%;
-    transform: translateY(-40%);
+    top: 55%;
+    transform: translateY(-45%);
   }
-}*/
+}
 
 @media only screen and (max-width: 1000px) {
   .cover_content {
@@ -1474,7 +1474,8 @@ figure p {
 .step {
   margin: 0 auto 2rem auto;
   opacity: 1;
-  height: 75vh;
+  /* height: 75vh; */
+  padding-bottom: 75vh;
 }
 
 .step:last-child {
