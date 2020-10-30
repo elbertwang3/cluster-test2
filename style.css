@@ -1603,5 +1603,6 @@ figure p {
 .copy {
   padding: 1rem;
   max-width: 540px;
+  text-align: center;
   margin: auto;
 }
