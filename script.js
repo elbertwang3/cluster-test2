@@ -2,14 +2,14 @@ var scroller = scrollama();
 const progress = document.getElementsByClassName("progress-bar")[0];
 const scrolly = document.getElementById("scrolly");
 let scrollyHeight = scrolly.clientHeight;
-let scrollyOffset = scrolly.getBoundingClientRect().top;
+let scrollyOffset = window.pageYOffset + scrolly.getBoundingClientRect().top;
 
 // generic window resize listener event
 function handleResize() {
   // 3. tell scrollama to update new element dimensions
   scroller.resize();
   scrollyHeight = scrolly.clientHeight;
-  scrollyOffset = scrolly.getBoundingClientRect().top;
+  scrollyOffset = window.pageYOffset + scrolly.getBoundingClientRect().top;
 }
 
 // scrollama event handlers
@@ -25,8 +25,6 @@ function handleStepEnter(response) {
 
 function handleStepExit(response) {
   // response = { element, direction, index }
-  console.log(response.direction);
-  console.log(response.index);
   // console.log(response.index, "-------- exit", response.direction);
   // remove color from current step
   response.element.classList.remove("is-active");
@@ -66,10 +64,13 @@ function init() {
   // setup resize event
   window.addEventListener("resize", handleResize);
   window.addEventListener("scroll", (e) => {
-    progress.style.width = `${Math.min(
-      100,
-      ((window.scrollY - scrollyOffset) * 100) /
-        (scrollyHeight - window.innerHeight)
+    progress.style.width = `${Math.max(
+      0,
+      Math.min(
+        100,
+        ((window.pageYOffset - scrollyOffset) * 100) /
+          (scrollyHeight - window.innerHeight)
+      )
     )}%`;
   });
 }
