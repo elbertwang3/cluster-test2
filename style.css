@@ -185,8 +185,7 @@ body {
 a {
   color: #337ab7;
   text-decoration: none;
-  font-weight:bold;
-
+  font-weight: bold;
 }
 
 a:focus,
@@ -1484,6 +1483,9 @@ figure p {
 
 .img-step {
   opacity: 0;
+}
+
+.is-active.transition {
   transition: opacity 1s;
 }
 
@@ -1588,4 +1590,8 @@ figure p {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
   }
+}
+
+.bold {
+  font-weight: 700;
 }
