@@ -30,7 +30,6 @@ function handleStepExit(response) {
   response.element.classList.remove("is-active");
   if (response.direction == "up" && response.index == 0) {
   } else if (response.direction == "down" && response.index == 21) {
-    console.log("leaving last slide");
   } else {
     document
       .getElementsByClassName(`img-step-${response.index}`)[0]
